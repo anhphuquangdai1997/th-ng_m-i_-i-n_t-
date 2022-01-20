@@ -1,0 +1,29 @@
+
+.makeStyles-root-21{
+    padding: 0 10%;
+}
+.MuiAppBar-colorPrimary{
+    background-color: #B70E18 !important;
+}
+.MuiTab-wrapper{
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.MuiTab-wrapper:hover{
+    background-color: rgb(15, 15, 15);
+    transition:1s ease-in-out;
+    color:white
+}
+.button{
+    border: 1px solid gray;
+    width: 150px;
+    background-color: brown;
+}
+.MuiTabPanel-root{
+    padding: 10px !important;
+    background: #FFF8C2;
+}

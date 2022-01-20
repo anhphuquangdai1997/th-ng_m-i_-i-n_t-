@@ -1,0 +1,228 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+.searchee{
+  margin: 0 auto;
+  display: block;
+  width: 85vw;
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+  position: relative;
+  display: block;
+  background-color: rgb(248, 245, 245);
+  margin-left: 15%;
+  border-radius: 12px;
+  z-index:1;
+  
+  
+  
+  
+  
+  
+}
+.searchee > input[type="text"] {
+  width: 350px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  background-color:  #e1e3e6;
+  position: relative;
+  top:-65px;
+  right:30px;
+}
+.searchee > input[type="submit"] {
+  width: 75px;
+  height: 37px;
+  background-color:rgb(243, 9, 9) ;
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  transition: 0.5s;
+  outline:0;
+  outline-style: none;
+  position: relative;
+  top:-65px;
+  right:30px;
+  padding: 0 15px;
+ 
+}
+
+.searchee > input[type="submit"]:hover {
+  background-color: rgb(236, 11, 60);
+}
+.searchee img{
+  position: relative;
+  right: 100px;
+  
+  
+}
+.searchee select{
+  height: 35px;
+  border-radius: 10px;
+  float: right;
+  position: relative;
+  bottom: -45px;
+  margin-right: 200px;
+  
+
+}
+
+/* select{
+  height: 35px;
+  border-radius: 5px;
+  float: right;
+  
+}
+Link{
+  padding: 0 50px;
+} */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+  
+}
+.danhmuc{
+  text-align: center;
+  padding: 5px 0;
+  letter-spacing: 2px;
+  color:rgb(240, 13, 13);
+  font-weight: bold;
+
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 0.7vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+
+.pageItemActive {
+  background-color: tomato;
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.filterBox {
+  width: 10vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 3vmax;
+  position: fixed;
+  padding: 0 5px;
+  line-height: 2;
+  z-index: -1;
+  
+}
+
+.categoryBox {
+  padding: 0%;
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  
+  
+}
+
+.category-link {
+  list-style: none;
+  color: black;
+  font: 400 0.8vmax "Roboto";
+  
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 1px solid #F7F7F7;
+  padding: 5px 5px;
+}
+.category-link:hover {
+  color: tomato;
+  border-bottom: 1px solid gray;
+  font-size: 19px;
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+
+@media screen and (max-width: 600px) {
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+  .searchee{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+  .searchee{
+    display: none;
+  }
+}
