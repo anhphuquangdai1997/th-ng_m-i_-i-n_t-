@@ -237,6 +237,7 @@
   justify-content: center;
   min-height: 25vh;
   display: block;
+  display: inline-flex;
   
   
 
@@ -304,6 +305,7 @@ h4{
   .productsss{
     display: none;
   }
+  
 
   .ProductDetails > div:last-child {
     align-items: center;
