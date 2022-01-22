@@ -35,18 +35,18 @@ const ConfirmOrder = ({ history }) => {
 
     history.push("/process/payment");
   };
-  const proceedToPaymentt = () => {
-    const data = {
-      subtotal,
-      shippingCharges,
-      tax,
-      totalPrice,
-    };
+  // const proceedToPaymentt = () => {
+  //   const data = {
+  //     subtotal,
+  //     shippingCharges,
+  //     tax,
+  //     totalPrice,
+  //   };
 
 
 
-    history.push("/success");
-  };
+  //   history.push("/success");
+  // };
 
   return (
     <Fragment>
@@ -115,9 +115,9 @@ const ConfirmOrder = ({ history }) => {
               </p>
               <span>${totalPrice}</span>
             </div>
-            <button onClick={proceedToPayment} style={{ borderRadius: '10px' }}> Thanh toán online</button>
+            <button onClick={proceedToPayment} style={{ borderRadius: '10px' }}> Thanh toán</button>
 
-            <div className="cach"><button onClick={proceedToPaymentt} style={{ borderRadius: '10px' }}>Thanh Toán sau</button></div>
+            {/* <div className="cach"><button onClick={proceedToPaymentt} style={{ borderRadius: '10px' }}>Thanh Toán sau</button></div> */}
           </div>
         </div>
       </div>
