@@ -20,7 +20,7 @@ function Oppo() {
     const products = [
         {
             img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1639211475/products/eaypemgalhrbellx5bro.jpg',
-            title: 'Oppo A1K',
+            title: 'Oppo A1K 128gb',
             link: '/product/61ab0d8fdf8d50000471986c',
         },
         {
@@ -30,7 +30,7 @@ function Oppo() {
         },
         {
             img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1638878706/products/vqotmocxkpuok0m3p3ye.jpg',
-            title: 'Oppo S2',
+            title: 'Oppo S2 mới nhất',
             link: '/product/61af4df5d001930004c8cad4',
         },
         {
@@ -55,7 +55,7 @@ function Oppo() {
 
                         </div>
 
-                        <Link to={x.link}><img className="img" src={x.img} alt='kkk' /></Link>
+                        <Link to={x.link}><img className="img" src={x.img} alt='kkk' width='85%' /></Link>
 
 
                     </div>

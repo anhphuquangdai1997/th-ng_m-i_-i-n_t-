@@ -79,3 +79,18 @@
     outline: none;
   }
   /* carousel slider style end */
+
+
+
+  @media screen and (max-width: 769px){
+    .App {
+      width: 95% !important;
+      
+      
+      
+    }
+    .slick-slide img{
+      height: 160px;
+    }
+
+  }

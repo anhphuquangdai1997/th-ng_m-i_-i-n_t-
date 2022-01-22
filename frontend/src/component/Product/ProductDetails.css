@@ -236,6 +236,7 @@
   padding: 0 5vmax;
   justify-content: center;
   min-height: 25vh;
+  display: block;
   
   
 
@@ -253,10 +254,9 @@
   margin-left: 15%;
   border-radius: 12px;
   
-  
-  
-  
-  
+}
+h4{
+  display: block;
 }
 .searchee > input[type="text"] {
   width: 350px;
@@ -300,6 +300,9 @@
   .ProductDetails {
     flex-direction: column;
     height: unset;
+  }
+  .productsss{
+    display: none;
   }
 
   .ProductDetails > div:last-child {
@@ -373,6 +376,9 @@
     width: 20vmax;
     margin: 3vmax 0;
   }
+  h4{
+    display: none;
+  }
 
   .reviewCard > p {
     font: 600 3vw "Roboto";
@@ -380,4 +386,15 @@
   .reviewCardComment {
     font: 300 5vw cursive;
   }
+}
+
+
+@media screen and (max-width: 769px){
+  .productsss{
+    display: none;
+  }
+  h4{
+    display: none;
+  }
+
 }
