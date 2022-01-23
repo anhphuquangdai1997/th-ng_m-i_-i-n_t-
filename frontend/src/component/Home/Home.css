@@ -103,6 +103,7 @@
 .homehotpage{
   text-align: center;
   display: block;
+  padding: 0 10%;
 
 }
 .homehotpageee{
@@ -258,3 +259,9 @@
   }
 }
 
+@media screen and (max-width: 769px){
+  .homehotpage{
+    padding: 0px !important;
+  }
+
+}

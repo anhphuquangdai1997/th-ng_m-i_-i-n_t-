@@ -1,10 +1,10 @@
 
-.makeStyles-root-21{
+/* .makeStyles-root-21{
     padding: 0 10%;
 }
 .makeStyles-root-24{
     padding: 0 10%;
-}
+} */
 .MuiAppBar-colorPrimary{
     background-color: #B70E18 !important;
 }
@@ -32,9 +32,9 @@
 }
 
 
-@media screen and (max-width: 769px){
+/* @media screen and (max-width: 769px){
     .makeStyles-root-21{
         padding: 0 1% !important;
     }
 
-}
+} */
