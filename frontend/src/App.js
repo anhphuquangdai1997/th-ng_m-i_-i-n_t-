@@ -42,6 +42,8 @@ import ProductReviews from "./component/Admin/ProductReviews";
 import Contact from "./component/layout/Contact/Contact";
 import About from "./component/layout/About/About";
 import NotFound from "./component/layout/Not Found/NotFound";
+import Macbook from "./component/Home/Macbook";
+import Iphonese from './component/Home/Iphonese';
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
@@ -109,6 +111,8 @@ function App() {
         <Route exact path="/login" component={LoginSignUp} />
 
         <Route exact path="/cart" component={Cart} />
+        <Route exact path="/Macbook" component={Macbook} />
+        <Route exact path="/Iphonese" component={Iphonese} />
 
         <ProtectedRoute exact path="/shipping" component={Shipping} />
 

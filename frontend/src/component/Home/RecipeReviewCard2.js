@@ -14,6 +14,7 @@ import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Link } from 'react-router-dom'
 // import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
@@ -61,7 +62,7 @@ export default function RecipeReviewCard1() {
             />
             <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    Ngay sau khi ra mắt, hiệu năng của Galaxy S22 Ultra dùng chip Exynos 2200 đã được đem ra so sánh với chip Snapdragon 8 Gen 1.
+                    <Link to="/Iphonese">Ngay sau khi ra mắt, hiệu năng của Galaxy S22 Ultra dùng chip Exynos 2200 đã được đem ra so sánh với chip Snapdragon 8 Gen 1.</Link>
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>

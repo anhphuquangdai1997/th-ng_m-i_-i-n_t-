@@ -14,6 +14,7 @@ import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { Link } from 'react-router-dom'
 // import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
@@ -61,7 +62,7 @@ export default function RecipeReviewCard1() {
             />
             <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    iPhone SE 2020 có thiết kế mới khá giống với iPhone 8 nhưng được trang bị các công nghệ bên trong tương tự như iPhone 11.
+                    <Link to="/Iphonese">iPhone SE 2020 có thiết kế mới khá giống với iPhone 8 nhưng được trang bị các công nghệ bên trong tương tự như iPhone 11.</Link>
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
