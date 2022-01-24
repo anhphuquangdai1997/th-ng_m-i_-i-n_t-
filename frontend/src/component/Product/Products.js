@@ -61,30 +61,23 @@ const Products = ({ match, history }) => {
     setPrice(newPrice);
   };
   let count = filteredProductsCount;
-
   useEffect(() => {
     if (error) {
       alert.error(error);
       dispatch(clearErrors());
     }
-
     dispatch(getProduct(keyword, currentPage, price, category, ratings));
   }, [dispatch, keyword, currentPage, price, category, ratings, alert, error]);
-
   return (
     <Fragment>
       {loading ? (
         <Loader />
       ) : (
-
         <Fragment>
           <MetaData title="PRODUCTS -- ECOMMERCE" />
           <div>
-
-
             <form className="searchee" onSubmit={searchSubmitHandler}>
               <img src={Logo} width="20%" alt='' />
-
               <input
                 className="button_search"
                 type="text"
@@ -101,20 +94,15 @@ const Products = ({ match, history }) => {
                   </option>
                 ))}
               </select>
-
-
             </form>
-
           </div>
           <h2 className="productsHeading">All Products</h2>
-
           <div className="products">
             {products &&
               products.map((product) => (
                 <ProductCard key={product._id} product={product} />
               ))}
           </div>
-
           <div className="filterBox">
             <Typography>Giá</Typography>
             <Slider
@@ -125,7 +113,6 @@ const Products = ({ match, history }) => {
               min={0}
               max={10000}
             />
-
             <Typography className="danhmuc">DANH MỤC</Typography>
             <ul className="categoryBox">
 
@@ -175,5 +162,4 @@ const Products = ({ match, history }) => {
     </Fragment>
   );
 };
-
 export default Products;

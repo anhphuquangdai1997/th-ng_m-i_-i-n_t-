@@ -103,8 +103,8 @@ const ProcessOrder = ({ history, match }) => {
                       >
                         {order.paymentInfo &&
                           order.paymentInfo.status === "succeeded"
-                          ? "PAID"
-                          : "NOT PAID"}
+                          ? "Đã thanh toán"
+                          : "Chưa thanh toán"}
                       </p>
                     </div>
 

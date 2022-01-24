@@ -389,8 +389,6 @@ h4{
     font: 300 5vw cursive;
   }
 }
-
-
 @media screen and (max-width: 769px){
   .productsss{
     display: none;

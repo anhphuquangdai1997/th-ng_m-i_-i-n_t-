@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "./orderDetails.css";
 import { useSelector, useDispatch } from "react-redux";
 import MetaData from "../layout/MetaData";
@@ -7,12 +7,21 @@ import { Typography } from "@material-ui/core";
 import { getOrderDetails, clearErrors } from "../../actions/orderAction";
 import Loader from "../layout/Loader/Loader";
 import { useAlert } from "react-alert";
+// import DateTimePicker from 'react-datetime-picker';
 
 const OrderDetails = ({ match }) => {
   const { order, error, loading } = useSelector((state) => state.orderDetails);
 
   const dispatch = useDispatch();
   const alert = useAlert();
+
+  // const [value, onChange] = useState(new Date());
+
+  // const getDateValue = (value) => {
+  //   onChange(value)
+  //   console.log(value)
+  //   alert(value)
+  // }
 
   useEffect(() => {
     if (error) {
@@ -53,6 +62,7 @@ const OrderDetails = ({ match }) => {
                       `${order.shippingInfo.address}, ${order.shippingInfo.city}, ${order.shippingInfo.state}, ${order.shippingInfo.pinCode}, ${order.shippingInfo.country}`}
                   </span>
                 </div>
+                {/* <DateTimePicker onchange={getDateValue} value={value}></DateTimePicker> */}
               </div>
               <Typography>Payment</Typography>
               <div className="orderDetailsContainerBox">
@@ -67,8 +77,8 @@ const OrderDetails = ({ match }) => {
                   >
                     {order.paymentInfo &&
                       order.paymentInfo.status === "succeeded"
-                      ? "PAID"
-                      : "NOT PAID"}
+                      ? "Đã thanh toán"
+                      : "Chưa thanh toán"}
                   </p>
                 </div>
 
