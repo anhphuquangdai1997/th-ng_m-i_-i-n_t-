@@ -6,10 +6,12 @@ import TabContext from '@material-ui/lab/TabContext';
 import TabList from '@material-ui/lab/TabList';
 import TabPanel from '@material-ui/lab/TabPanel';
 import "./Giamgia.css";
-import Iphone from './Iphone';
-import Samsung from './Samsung';
-import Oppo from './Oppo';
+// import Iphone from './Iphone';
+// import Samsung from './Samsung';
+// import Oppo from './Oppo';
 
+import { useSelector, useDispatch } from "react-redux";
+import ProductCard from './ProductCard';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,6 +27,12 @@ export default function LabTabs() {
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+    const dispatch = useDispatch();
+
+    const {
+        products
+
+    } = useSelector((state) => state.products);
 
     return (
         <div className={classes.root}>
@@ -37,10 +45,23 @@ export default function LabTabs() {
                     </TabList>
                 </AppBar>
                 <TabPanel value="1">
-                    <Iphone />
+
+                    {
+                        products.map(productt => {
+                            return productt.Stock == 7
+                                ? <ProductCard key={productt._id} product={productt} /> : null
+                        })}
                 </TabPanel>
-                <TabPanel value="2"><Samsung /></TabPanel>
-                <TabPanel value="3"><Oppo /></TabPanel>
+                <TabPanel value="2">{
+                    products.map(productt => {
+                        return productt.Stock == 8
+                            ? <ProductCard key={productt._id} product={productt} /> : null
+                    })}</TabPanel>
+                <TabPanel value="3">{
+                    products.map(productt => {
+                        return productt.Stock == 9
+                            ? <ProductCard key={productt._id} product={productt} /> : null
+                    })}</TabPanel>
             </TabContext>
         </div>
     );

@@ -29,6 +29,7 @@
 .MuiTabPanel-root{
     padding: 10px !important;
     background: #FFF8C2;
+    display: flex;
 }
 
 

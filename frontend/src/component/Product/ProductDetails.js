@@ -224,7 +224,7 @@ const ProductDetails = ({ match, history }) => {
             <div className="productsss">
               {
                 products.map(productt => {
-                  return productt.category === product.category && productt.price > 2000 && productt.numOfReviews >= 1
+                  return productt.category === product.category && productt.price > 2200 && productt.numOfReviews >= 1 && productt.Stock >= 1
                     ? <Carousel><ProductCard key={productt._id} product={productt} /></Carousel> : null
                 })}
             </div>

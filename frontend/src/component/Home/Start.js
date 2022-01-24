@@ -13,7 +13,7 @@ const Start = ({ product }) => {
     return (
         <span>
 
-            {product.numOfReviews >= 1 && product.price > 2000 && product.Stock > 1 ? <Link className="productCard" to={`/product/${product._id}`}>
+            {product.numOfReviews >= 1 && product.price >= 2500 && product.Stock > 1 ? <Link className="productCard" to={`/product/${product._id}`}>
                 <img src={product.images[0].url} alt={product.name} />
                 <p>{product.name}</p>
                 <div>
