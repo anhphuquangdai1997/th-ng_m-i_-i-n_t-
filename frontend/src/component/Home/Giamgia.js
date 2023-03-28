@@ -48,18 +48,18 @@ export default function LabTabs() {
 
                     {
                         products.map(productt => {
-                            return productt.Stock == 7
+                            return productt.category && productt.Stock>=1 &&productt.numberStart>=1
                                 ? <ProductCard key={productt._id} product={productt} /> : null
                         })}
                 </TabPanel>
                 <TabPanel value="2">{
                     products.map(productt => {
-                        return productt.Stock == 8
+                        return productt.category && productt.Stock>=1&&productt.numberStart>=1
                             ? <ProductCard key={productt._id} product={productt} /> : null
                     })}</TabPanel>
                 <TabPanel value="3">{
                     products.map(productt => {
-                        return productt.Stock == 9
+                        return productt.category && productt.Stock>=1&&productt.numberStart>=1
                             ? <ProductCard key={productt._id} product={productt} /> : null
                     })}</TabPanel>
             </TabContext>
