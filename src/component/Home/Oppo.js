@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Samsung() {
+function Oppo() {
 
     const config = {
         dots: true,
@@ -20,24 +19,24 @@ function Samsung() {
 
     const products = [
         {
-            img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1638599679/products/nbgdzirf5fm9jst4ezjr.jpg',
-            title: 'Samsung galaxy Z',
-            link: '/product/61ab0bffdf8d50000471980c',
+            img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1639211475/products/eaypemgalhrbellx5bro.jpg',
+            title: 'Oppo A1K',
+            link: '/product/61ab0d8fdf8d50000471986c',
         },
         {
-            img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1639832624/products/os0rr5glptwcpp4l0n1b.jpg',
-            title: 'galaxy note 10 pro',
-            link: '/products/máy%20ảnh',
+            img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1639211474/products/vavmpwugqptpqb17fswq.jpg',
+            title: 'Oppo Reno 2F',
+            link: '/product/61b461d3987346000433dd28',
         },
         {
-            img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1642668603/products/ai0mumzfn3kghtreduev.jpg',
-            title: 'samsung galaxy A32',
-            link: '/product/61e9223ca393690004c6eb70',
+            img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1638878706/products/vqotmocxkpuok0m3p3ye.jpg',
+            title: 'Oppo S2',
+            link: '/product/61af4df5d001930004c8cad4',
         },
         {
-            img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1642668900/products/ykbgttawykdaddek3crd.jpg',
-            title: 'galaxy note 40 128gb',
-            link: '/product/61e92365a393690004c6eb8d',
+            img: 'https://res.cloudinary.com/dwjj1ijln/image/upload/v1642669363/products/ldpy5fifc7ixntxvjnci.jpg',
+            title: 'OPPO Find X3',
+            link: '/product/61e92534a393690004c6ebb0',
         },
 
 
@@ -66,4 +65,4 @@ function Samsung() {
     );
 }
 
-export default Samsung;
+export default Oppo;
